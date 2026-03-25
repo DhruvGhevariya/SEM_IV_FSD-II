@@ -1,0 +1,13 @@
+<script>
+    function demo(name,callback){
+        console.log("Welcome"+name);//welcomeNisha
+        callback();
+    }
+    function my(){
+        console.log("finished execution")//finished execution
+    }
+    demo("Nisha",my);
+    setTimeout(()=>{
+        console.log("Hello");// 5s then hello print
+    },5000);
+</script>

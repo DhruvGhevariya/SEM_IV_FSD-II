@@ -1,0 +1,40 @@
+<script>
+    var data={
+        "division1":{
+            "name":["x","p","y","a","e"],
+            "age":[10,20,30,10,20]
+        },
+        "division2":{
+            "name":["j","n","b","f","v"],
+            "age":[10,10,20,11,13]
+        }
+    }
+    var d1=data.division1.name;
+    var d2=data.division2.name;
+    var ans=d1.concat(d2).sort();
+    console.log(ans)
+    for(a of ans){
+        document.write("<h1>welcome"+a+"<h1>");
+    }
+</script>
+<!-- 0: "a"
+1:"b"
+2:"e"
+3:"f"
+4:"j"
+5:"n"
+6:"p"
+7:"v"
+8:"x"
+9: "y"
+length: 10 -->
+<!-- welcomea           
+welcomeb
+welcomee
+welcomef
+welcomej
+welcomen
+welcomep
+welcomev
+welcomex
+welcomey -->

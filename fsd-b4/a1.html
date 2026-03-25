@@ -1,0 +1,16 @@
+<script>
+    function my(){
+    var obj='{"name":"NAS","subject":"fsd2","exam":"2026-04-15"}'
+    var o=JSON.parse(obj)
+    document.getElementById("n").innerHTML=o.name;
+    document.getElementById("d").innerHTML=new Date(o.exam)
+    }
+</script>
+<body>
+    <button onclick="my()">Click Here</button>
+    <h3 id="n"></h3>
+    <p id="d"></p>
+</body>
+<!-- Click Here
+NAS
+Wed Apr 15 2026 05:30:00 GMT+0530 (India Standard Time) -->

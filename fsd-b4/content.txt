@@ -1,0 +1,2 @@
+Hello! B4 students 
+welcome to node js tutorialVowels are: 14

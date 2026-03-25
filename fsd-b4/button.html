@@ -1,0 +1,28 @@
+<h1 id="temp" style="font-size: 50px;">Hello</h1>
+<button onclick="inc()">Increase</button>
+<button onclick="dec()">Decrease</button>
+<button onclick="Stop()">Stop</button>
+<script>
+    var font=50;
+    function fun(font){
+        document.getElementById("temp").style.fontSize=font+"px";
+    }
+    function inc(){
+         test=setInterval(()=>{
+            if(font<200){
+                fun(++font);
+            }
+        },100)
+    }
+    function dec(){
+          test=setInterval(()=>{
+            if(font>20){
+                fun(--font);
+            }
+        },100)
+    }
+    function Stop(){
+        clearInterval(test);
+    }
+
+</script>
